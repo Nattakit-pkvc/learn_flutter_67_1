@@ -11,31 +11,47 @@ void main() {
       title: "หัวข้อ",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("My App"),
-          backgroundColor: const Color.fromARGB(255, 236, 75, 6),
+          title: Text(
+            "My App",
+            style: TextStyle(
+              color: const Color.fromARGB(255, 255, 255, 254),
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          backgroundColor: const Color.fromARGB(255, 58, 5, 82),
           centerTitle: true,
         ),
-        body: Text("Hello Father!!!"),
+        body: Home(),
       ),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+    return Text("Hello Flutter Step 2");
   }
 }
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Demo',
+//       theme: ThemeData(
+//         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+//       ),
+//       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+//     );
+//   }
+// }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
