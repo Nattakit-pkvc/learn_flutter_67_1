@@ -5,20 +5,70 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset("assets/images/huh.jpg", width: 200, height: 200),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton(
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            onPressed: () {
+              print("Buttun Press");
+            },
+            child: Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
 
-        const SizedBox(height: 20),
+          const SizedBox(height: 20),
 
-        Image.network(
-          "https://preview.redd.it/orange-cat-huh-v0-92r4y3vfnsoc1.png?width=1080&crop=smart&auto=webp&s=3cdb0b293c85cfc1fa4c1b5873043373f4748137",
-          width: 200,
-          height: 200,
-        ),
-      ],
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              print("Filled Buttun Press");
+            },
+            child: Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+
+          const SizedBox(height: 20),
+
+          OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              foregroundColor: Colors.red,
+              side: BorderSide(color: Colors.pinkAccent, width: 2),
+            ),
+            onPressed: () {
+              print("Outline Buttun Press");
+            },
+            child: Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+
+          const SizedBox(height: 20),
+
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.pinkAccent,
+              foregroundColor: Colors.white,
+            ),
+            onPressed: () {
+              print("Elevated Buttun Press");
+            },
+            child: Text(
+              "Click Me",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
