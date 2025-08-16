@@ -9,10 +9,10 @@ class Home extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TextButton(
+          TextButton( 
             style: TextButton.styleFrom(foregroundColor: Colors.red),
             onPressed: () {
-              print("Buttun Press");
+              print("Button Press");
             },
             child: Text(
               "Click Me",
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             onPressed: () {
-              print("Filled Buttun Press");
+              print("Filled Button Press");
             },
             child: Text(
               "Click Me",
@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
               side: BorderSide(color: Colors.pinkAccent, width: 2),
             ),
             onPressed: () {
-              print("Outline Buttun Press");
+              print("Outline Button Press");
             },
             child: Text(
               "Click Me",
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             onPressed: () {
-              print("Elevated Buttun Press");
+              print("Elevated Button Press");
             },
             child: Text(
               "Click Me",
