@@ -5,54 +5,18 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Row(
     return Column(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.redAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Hello",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
+        Image.asset("assets/images/huh.jpg", width: 200, height: 200),
+
+        const SizedBox(height: 20),
+
+        Image.network(
+          "https://preview.redd.it/orange-cat-huh-v0-92r4y3vfnsoc1.png?width=1080&crop=smart&auto=webp&s=3cdb0b293c85cfc1fa4c1b5873043373f4748137",
+          width: 200,
+          height: 200,
         ),
       ],
     );
